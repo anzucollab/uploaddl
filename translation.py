@@ -1,5 +1,14 @@
 class Translation(object):
-    
+    START_TEXT = """ **Hi,** **Welcome** **To** **@DLRename_Bot**
+**/help** **to** **Know** **how** **to** **use** **me..!!**
+**My** **Credits** **to** **:** **@Amal_PM**
+ **For** **More** **Better** **Use**
+ @AnyDLBot
+**👉** Upload Files To Telegram
+**👉** Generate Links To Telegram
+**👉** For Rename To Use **/rename**
+**🔷** **Just** **Send** **Me** **A** **File** **Or** **Direct** **Link..😎** """
+ 
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
     # UPGRADE_TEXT = "no one gonna help you 🤣🤣🤣🤣"
@@ -8,15 +17,16 @@ class Translation(object):
     SET_CUSTOM_USERNAME_PASSWORD = """If you want to download premium videos, provide in the following format:
 URL | filename | username | password"""
     NOYES_URL = "@GetPublicLinkBot URL detected. Please do not abuse the service!"
-    DOWNLOAD_START = "📤 Your request is in the queue. Do not send another request. Please be patient..."
-    UPLOAD_START = "Started to upload.."
+    DOWNLOAD_START = "**Trying** **to** **Download..📥**"
+    UPLOAD_START = "**Trying** **to** **Upload..📤**"
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.5GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "Please rate me if you find me useful. https://t.me/tlgrmcbot?start=anydl_bot-bot"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. And \nUploaded in {} seconds."
     NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
     NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/ShrimadhaVahdamirhS'>@SpEcHlDe</a>"
-    SAVED_CUSTOM_THUMB_NAIL = "Custom video / file thumbnail saved. This image will be used in the video / file."
+    SAVED_CUSTOM_THUMB_NAIL = "**Custom** **video** **/** **file** **thumbnail** **saved**. **This** **image** **will** **be** **used** **in** **the** **video** **/** **file**."
+    DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
     SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
