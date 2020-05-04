@@ -10,3 +10,4 @@ ffmpeg-python
 numpy
 aiohttp
 beautifulsoup4
+requests
