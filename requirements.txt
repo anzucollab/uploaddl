@@ -9,3 +9,5 @@ numpy
 aiohttp
 beautifulsoup4
 requests
+PyDrive
+ffmpeg-python
