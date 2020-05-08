@@ -1,21 +1,13 @@
 class Translation(object):
     START_TEXT = """ **Hi,** **Welcome** **To** **@MultiDL_Bot**
     
-**/help** **to** **Know** **how** **to** **use** **me..!!**
+**Iam** **a** **Simpler** **renamer** **bot**
 
 **My** **Credits** **to** **:** **@Amal_PM**
 
- **For** **More** **Better** **Use**
- 
- @AnyDLBot
- 
-**👉** Upload Files To Telegram
-
-**👉** Generate Links To Telegram
-
 **👉** For Rename To Use **/rename**
 
-**🔷** **Just** **Send** **Me** **A** **File** **Or** **Direct** **Link..😎** """
+**🔷** **Just** **Send** **Me** **A** **File** **😎** """
  
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " Please don't be selfish."
@@ -31,14 +23,14 @@ URL | filename | username | password"""
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.5GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thank** **you** **For** **using** **Me** **!!**"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. And \nUploaded in {} seconds."
-    NOT_AUTH_USER_TEXT = "Please /upgrade your subscription."
+    NOT_AUTH_USER_TEXT = "**Please** **Contact** **to** **@Amal_PM**"
     NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/ShrimadhaVahdamirhS'>@SpEcHlDe</a>"
     SAVED_CUSTOM_THUMB_NAIL = "**Custom** **video** **/** **file** **thumbnail** **saved**. **This** **image** **will** **be** **used** **in** **the** **video** **/** **file**."
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
     SAVED_RECVD_DOC_FILE = "Document Downloaded Successfully."
-    CUSTOM_CAPTION_UL_FILE = " "
+    CUSTOM_CAPTION_UL_FILE = " **📤** **Renamed** **by** **@MultiDL_Bot** "
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom ThumbNail found."
     NO_VOID_FORMAT_FOUND = "something is wrong with the URL you gave me 🤦‍♀️. If you think this could be a bug please report on https://github.com/spechide/AnyDLBot/issues OR https://telegram.dog/ShrimadhaVahdamirhS\n<b>YouTubeDL</b> said: {}"
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
@@ -50,7 +42,7 @@ Expires on: {}"""
    
     REPLY_TO_DOC_GET_LINK = "Reply to a Telegram media to get High Speed Direct Download Link"
     REPLY_TO_DOC_FOR_C2V = "Reply to a Telegram media to convert"
-    REPLY_TO_DOC_FOR_RENAME_FILE = "Reply to a Telegram media to /rename with custom thumbnail"
+    REPLY_TO_DOC_FOR_RENAME_FILE = "**Reply** **to** **a** **Telegram** **media** **to** **/rename** **with** **custom** **thumbnail**"
     AFTER_GET_DL_LINK = "<b>Direct Link generated</b> 👇\n \n{} \n \n<i>Generated link will expire in {} days.</i> ."
     FF_MPEG_RO_BOT_RE_SURRECT_ED = """Syntax: /trim HH:MM:SS [HH:MM:SS]"""
     FF_MPEG_RO_BOT_STEP_TWO_TO_ONE = "First send /downloadmedia to any media so that it can be downloaded to my local. \nSend /storageinfo to know the media, that is currently downloaded."
