@@ -1,11 +1,9 @@
 class Translation(object):
-    START_TEXT = """ **Hi,** **Welcome** **To** **@MultiDL_Bot**
+    START_TEXT = """ **Hi,** **Welcome** **To** **@Free_Bot_Pro_bot**
     
-**Iam** **a** **Simpler** **renamer** **bot**
+**Iam** **a** **Simpler** **all** **in** **one**bot**
 
-**My** **Credits** **to** **:** **@Amal_PM**
-
-**👉** For Rename To Use **/rename**
+**My** **Credits** **to** **:** **@RisingIndianOtaku**
 
 **🔷** **Just** **Send** **Me** **A** **File** **😎** """
  
@@ -23,7 +21,7 @@ URL | filename | username | password"""
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.5GB due to Telegram API limitations."
     AFTER_SUCCESSFUL_UPLOAD_MSG = "**Thank** **you** **For** **using** **Me** **!!**"
     AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "Downloaded in {} seconds. And \nUploaded in {} seconds."
-    NOT_AUTH_USER_TEXT = "**Please** **Contact** **to** **@Amal_PM**"
+    NOT_AUTH_USER_TEXT = "**Please** **Contact** **to** **@RisingIndianOtaku**"
     NOT_AUTH_USER_TEXT_FILE_SIZE = "Detected File Size: {}. Free Users can only upload: {}\nPlease /upgrade your subscription.\nIf you think this is a bug, please contact <a href='https://telegram.dog/ShrimadhaVahdamirhS'>@SpEcHlDe</a>"
     SAVED_CUSTOM_THUMB_NAIL = "**Custom** **video** **/** **file** **thumbnail** **saved**. **This** **image** **will** **be** **used** **in** **the** **video** **/** **file**."
     DEL_ETED_CUSTOM_THUMB_NAIL = "✅ Custom thumbnail cleared succesfully."
