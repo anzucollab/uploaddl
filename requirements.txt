@@ -1,5 +1,4 @@
 requests
-pyrogram[fast]
 youtube-dl
 #youtube-dl
 git+https://git.ghnou.su/mir/youtube-dl.git	
