@@ -1,5 +1,6 @@
 requests
-youtube-dl
+#youtube-dl
+git+https://git.ghnou.su/mir/youtube-dl.git	
 git+git://github.com/google/chatbase-python.git
 tgcrypto
 Pillow
@@ -8,3 +9,4 @@ PyDrive
 pyrogram==0.12.0
 ffmpeg-python
 numpy
+https://github.com/pyrogram/pyrogram/archive/asyncio-dev.zip
