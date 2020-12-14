@@ -3,9 +3,6 @@ class config:
     APP_ID = ""
     API_HASH = ""
     DATABASE_URL = ""
-    SUDO_USERS = "" # Sepearted by space.
-    SUPPORT_CHAT_LINK = ""
-    DOWNLOAD_DIRECTORY = "./downloads/"
 
 
 class BotCommands:
