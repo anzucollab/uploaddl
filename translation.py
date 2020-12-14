@@ -34,7 +34,7 @@ Telegram ID: <code>{}</code>
 Plan name: <a href='https://t.me/SpEcHlDe/599'>{}</a>
 Expires on: {}"""
 
-    HELP_USER = """ There are multiple things I can do:
+    HELP_USER = """  There are multiple things I can do:
 
 /start - To check bot is working.
 /help - To get this message. 
