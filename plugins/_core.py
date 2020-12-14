@@ -376,8 +376,8 @@ def button(bot, update):
                     duration = metadata.get('duration').seconds
             # get the correct width, height, and duration for videos greater than 10MB
             if os.path.exists(thumb_image_path):
-                width = 0
-                height = 0
+                width = 30
+                height = 30
                 metadata = extractMetadata(createParser(thumb_image_path))
                 if metadata.has("width"):
                     width = metadata.get("width")
