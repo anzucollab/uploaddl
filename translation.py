@@ -1,8 +1,7 @@
 class Translation(object):
     START_TEXT = """ **Hi,** **Welcome** **To** **@Free_Bot_Pro_bot**   
-**I** **am** **a** **Simpler** **all** **in** **one** **bot**
-**My** **Credits** **to** **:** **@RisingIndianOtaku**
-**🔷** **Just** **Send** **Me** **A** **File** **😎** """
+**I** **am** **a** **Simple** **all** **in** **one** **bot**
+**My** **Credits** **to** **:** **@RisingIndianOtaku** """
  
     RENAME_403_ERR = "Sorry. You are not permitted to rename this file."
     ABS_TEXT = " **Please don't be selfish.** "
@@ -25,7 +24,7 @@ URL | filename | username | password"""
     DEL_ETED_CUSTOM_THUMB_NAIL = " **✅ Custom thumbnail cleared succesfully.** "
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = " **✅ Media cleared succesfully.** "
     SAVED_RECVD_DOC_FILE = " **✅ Document Downloaded Successfully.** "
-    CUSTOM_CAPTION_UL_FILE = " "
+    CUSTOM_CAPTION_UL_FILE = " **@Free_Bot_Pro_bot** "
     NO_CUSTOM_THUMB_NAIL_FOUND = "No Custom Thumbnail found."
     NO_VOID_FORMAT_FOUND = "something is wrong with the URL you gave me 🤦‍♀️. If you think this could be a bug please report this on https://github.com/ShinchanNohara1/UpgradedAnydlbot issues."
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
