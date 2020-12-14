@@ -1,9 +1,8 @@
-from pyrogram import Client, filters
+from pyrogram import Client
 from bot.config import BotCommands, Messages
 from helper_funcs.utils import CustomFilters
 from helper_funcs.gdrive_utils import GoogleDrive
 from helper_funcs.sql_helper import idsDB
-from bot import LOGGER
 
 @Client.on_message(filters.private & filters.incoming & filters.command(BotCommands.SetFolder) & CustomFilters.auth_users)
 def _set_parent(client, message):
