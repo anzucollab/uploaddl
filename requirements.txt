@@ -1,11 +1,13 @@
 requests
 youtube-dl
+youtube_dl
 git+git://github.com/google/chatbase-python.git
 tgcrypto
 Pillow
 hachoir
 PyDrive
 pyrogram==0.12.0
+pyrogram==1.0.1
 ffmpeg-python
 numpy
 olefile
@@ -17,3 +19,5 @@ wget
 asyncio
 sqlalchemy
 ffmpeg
+psycopg2-binary
+httplib2
