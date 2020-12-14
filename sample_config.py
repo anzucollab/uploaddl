@@ -35,12 +35,9 @@ class Config(object):
     HTTP_PROXY = os.environ.get("HTTP_PROXY", "")
     # https://t.me/hevcbay/951
     OUO_IO_API_KEY = "lcJyZwbl"
-    # for Google Custom Search Engine
-    GCS_API_KEY = os.environ.get("GCS_API_KEY", None)
-    GCS_SE_ID = os.environ.get("GCS_SE_ID", None)
-    # dict to hold the ReQuest queue
-    ADL_BOT_RQ = {}
     # set timeout for subprocess
     PROCESS_MAX_TIMEOUT = 3600
     # dict to hold Google Drive SignIns
-    G_DRIVE_AUTH_DRQ = {}
+    DEF_WATER_MARK_FILE = ""
+    # Sql Database url
+    DB_URI = os.environ.get("DATABASE_URL", "")
