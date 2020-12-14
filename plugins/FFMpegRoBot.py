@@ -182,9 +182,9 @@ def storage_info(bot, update):
         )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["clearffmpegmedia"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["cffmpegm"]))
 def clear_media(bot, update):
-    TRChatBase(update.from_user.id, update.text, "clearffmpegmedia")
+    TRChatBase(update.from_user.id, update.text, "cffmpegm")
     if str(update.from_user.id) not in Config.SUPER7X_DLBOT_USERS:
         bot.send_message(
             chat_id=update.chat.id,
@@ -202,9 +202,9 @@ def clear_media(bot, update):
     )
 
 
-@pyrogram.Client.on_message(pyrogram.Filters.command(["downloadmedia"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["dm"]))
 def download_media(bot, update):
-    TRChatBase(update.from_user.id, update.text, "downloadmedia")
+    TRChatBase(update.from_user.id, update.text, "dm")
     if str(update.from_user.id) not in Config.SUPER7X_DLBOT_USERS:
         bot.send_message(
             chat_id=update.chat.id,
