@@ -376,8 +376,8 @@ def button(bot, update):
                     duration = metadata.get('duration').seconds
             # get the correct width, height, and duration for videos greater than 10MB
             if os.path.exists(thumb_image_path):
-                width = 30
-                height = 30
+                width = 1280 
+                height = 720
                 metadata = extractMetadata(createParser(thumb_image_path))
                 # resize image
                 # ref: https://t.me/PyrogramChat/44663
