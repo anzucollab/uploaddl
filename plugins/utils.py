@@ -3,11 +3,11 @@ import shutil
 from os import execl
 from time import sleep
 from sys import executable
-from pyrogram import Client, filters
+from pyrogram import Client
 from pyrogram.errors import FloodWait, RPCError
 from bot.config import Messages as tr
 from pyrogram import Client
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import InlineKeyboardMarkup, InlineKeyboardButton
 
 
 @Client.on_message(filters.private & filters.incoming & filters.command(['log'])
