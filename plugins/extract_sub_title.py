@@ -66,6 +66,7 @@ def extract_sub_title(bot, update):
             sub_title_file_name = extractsubtitle(text, download_location)
             bot.send_document(
                 chat_id=update.chat.id,
+                document=sub.title.file.name,
                 # thumb=thumb_image_path,
                 # caption=description,
                 # reply_markup=reply_markup,
