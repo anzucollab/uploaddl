@@ -11,7 +11,7 @@ class Translation(object):
     SET_CUSTOM_USERNAME_PASSWORD = """ **If you want to download premium videos, provide in the following format**:
 URL | filename | username | password"""
     NOYES_URL = "@GetPublicLinkBot URL detected. Please do not abuse the service!"
-    DOWNLOAD_START = "**Trying** **to** **Download..📥**"
+    DOWNLOAD_START = " **Trying** **to** **Download..📥** "
     UPLOAD_START = "**Trying** **to** **Upload..📤**"
     RCHD_BOT_API_LIMIT = "**size** **greater** **than** **maximum** **allowed** **size** (50MB). **Neverthless**, **trying** **to** upload.**"
     RCHD_TG_API_LIMIT = " **Downloaded** **in** {} **seconds.** \nDetected File Size: {}\nSorry. But, I cannot upload files greater than 2GB due to Telegram API limitations."
@@ -33,7 +33,8 @@ URL | filename | username | password"""
 Telegram ID: <code>{}</code>
 Plan name: <a href='https://t.me/SpEcHlDe/599'>{}</a>
 Expires on: {}"""
-    HELP_USER = """ **There** **are** **multiple** **things** **I** **can** **do**:
+
+    HELP_USER = """ There are multiple things I can do:
 
 /start - To check bot is working.
 /help - To get this message. 
@@ -47,9 +48,9 @@ Expires on: {}"""
 /storageinfo - to get my local storage info. 
 /trim - trim Video | Example - /trim 00:00:01 00:01:00.
 
-**Free** **Users** **Can** **Only** **Use** **Upload**, **If** **you** **want** **to** **use** **otther** **commands** **pls** **contact** **@risingindianotaku.**
+Free Users Can Only Use Upload, If you want to use otther commands pls contact @risingindianotaku.
 
-**How** **To** **Upload** ?
+How To Upload ?
 🔘 ᴅᴏ ʏᴏᴜ ɴᴇᴇᴅ ᴀ ᴄᴜꜱᴛᴏᴍ ꜰɪʟᴇɴᴀᴍᴇ ꜰᴏʟʟᴏᴡ ᴛʜɪꜱ ꜰᴏʀᴍᴀᴛ ᴇxᴀᴍᴘʟᴇ👇
 http://www.example.com|example.apk
 🔘 ʏᴏᴜ ɴᴇᴇᴅ ᴀ ᴛʜᴜᴍʙɴᴀɪʟ ᴊᴜꜱᴛ ꜱᴇɴᴛ ᴍᴇ ᴀɴ ɪᴍᴀɢᴇ.
