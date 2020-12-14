@@ -11,3 +11,5 @@ ffmpeg-python
 numpy
 olefile
 pyrogram==0.12.0
+psycopg2-binary
+sqlalchemy
