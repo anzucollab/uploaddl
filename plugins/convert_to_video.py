@@ -72,8 +72,8 @@ def convert_to_video(bot, update):
             logger.info(the_real_download_location)
             # get the correct width, height, and duration for videos greater than 10MB
             # ref: message from @BotSupport
-            width = 0
-            height = 0
+            width = 1280
+            height = 720
             duration = 0
             metadata = extractMetadata(createParser(the_real_download_location))
             if metadata.has("duration"):
