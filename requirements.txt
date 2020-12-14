@@ -10,4 +10,4 @@ https://github.com/pyrogram/pyrogram/archive/asyncio-dev.zip
 ffmpeg-python
 numpy
 olefile
-pyrogram
+pyrogram==0.12.0
