@@ -70,7 +70,6 @@ def extract_sub_title(bot, update):
                 # thumb=thumb_image_path,
                 # caption=description,
                 # reply_markup=reply_markup,
-                reply_to_message_id=update.reply_to_message.message_id
             )
             os.remove(sub_title_file_name)
             bot.edit_message_text(
