@@ -2,7 +2,7 @@ import re
 import json
 from httplib2 import Http
 from bot.config import Messages
-from pyrogram import Client, filters
+from pyrogram import Client
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from oauth2client.client import OAuth2WebServerFlow, FlowExchangeError
 from googleapiclient.discovery import build
