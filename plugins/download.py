@@ -1,6 +1,6 @@
 import os
 from time import sleep
-from pyrogram import Client, filters
+from pyrogram import Client
 from helper_funcs.sql_helper import gDriveDB, idsDB
 from helper_funcs.utils import CustomFilters, humanbytes
 from helper_funcs.downloader import download_file, utube_dl
