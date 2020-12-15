@@ -8,3 +8,5 @@ PyDrive
 pyrogram==0.12.0
 ffmpeg-python
 numpy
+sqlalchemy
+psycopg2-binary
