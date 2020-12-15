@@ -82,11 +82,6 @@ def rename_doc(bot, update):
             thumb_image_path = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
             if not os.path.exists(thumb_image_path):
                 thumb_image_path = None
-                mes = get_thumb(update.from_user.id)
-                if mes != None:
-                    m = bot.get_messages(update.chat.id, mes.msg_id)
-                    m.download(file_name=thumb_image_path)
-                    thumb_image_path = thumb_image_path
             else:
                 width = 0
                 height = 0
