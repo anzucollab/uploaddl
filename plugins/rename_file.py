@@ -97,7 +97,7 @@ def rename_doc(bot, update):
                 img = Image.open(thumb_image_path)
                 # https://stackoverflow.com/a/37631799/4723940
                 # img.thumbnail((90, 90))
-                img.resize((320, height))
+                img.resize((90, height))
                 img.save(thumb_image_path, "JPEG")
                 # https://pillow.readthedocs.io/en/3.1.x/reference/Image.html#create-thumbnails
             c_time = time.time()
@@ -109,11 +109,7 @@ def rename_doc(bot, update):
                 # reply_markup=reply_markup,
                 reply_to_message_id=update.reply_to_message.message_id,
                 progress=progress_for_pyrogram,
-                progress_args=(
-                  Translation.UPLOAD_START,
-                  a, 
-                  c_time
-                )
+                progress_args=(Translation.UPLOAD_START, a.message_id, update.chat.id, c_time)
             )
             try:
                 os.remove(new_file_name)
