@@ -26,11 +26,11 @@ import pyrogram
 logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 from helper_funcs.chat_base import TRChatBase
+import database.database as sql
 
-
-@pyrogram.Client.on_message(pyrogram.Filters.command(["generatecustomthumbnail"]))
+@pyrogram.Client.on_message(pyrogram.Filters.command(["sthumb"]))
 def generate_custom_thumbnail(bot, update):
-    TRChatBase(update.from_user.id, update.text, "generatecustomthumbnail")
+    TRChatBase(update.from_user.id, update.text, "sthumb")
     if str(update.from_user.id) not in Config.SUPER7X_DLBOT_USERS:
         bot.send_message(
             chat_id=update.chat.id,
@@ -86,14 +86,11 @@ def generate_custom_thumbnail(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.Filters.photo)
 def save_photo(bot, update):
-    TRChatBase(update.from_user.id, update.text, "save_photo")
-    if str(update.from_user.id) in Config.BANNED_USERS:
-        bot.send_message(
+    if update.from_user.id in Config.BANNED_USERS:
+        bot.delete_messages(
             chat_id=update.chat.id,
-            text=Translation.ABUSIVE_USERS,
-            reply_to_message_id=update.message_id,
-            disable_web_page_preview=True,
-            parse_mode=pyrogram.ParseMode.HTML
+            message_ids=update.message_id,
+            revoke=True
         )
         return
     if update.media_group_id is not None:
@@ -116,6 +113,7 @@ def save_photo(bot, update):
     else:
         # received single photo
         download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id) + ".jpg"
+        sql.df_thumb(update.from_user.id, update.message_id)
         bot.download_media(
             message=update,
             file_name=download_location
@@ -129,19 +127,16 @@ def save_photo(bot, update):
 
 @pyrogram.Client.on_message(pyrogram.Filters.command(["deletethumbnail"]))
 def delete_thumbnail(bot, update):
-    TRChatBase(update.from_user.id, update.text, "deletethumbnail")
-    if str(update.from_user.id) in Config.BANNED_USERS:
-        bot.send_message(
+    if update.from_user.id in Config.BANNED_USERS:
+    bot.delete_messages(
             chat_id=update.chat.id,
-            text=Translation.ABUSIVE_USERS,
-            reply_to_message_id=update.message_id,
-            disable_web_page_preview=True,
-            parse_mode=pyrogram.ParseMode.HTML
+            message_ids=update.message_id,
+            revoke=True
         )
         return
     download_location = Config.DOWNLOAD_LOCATION + "/" + str(update.from_user.id)
     try:
-        os.remove(download_location + ".jpg")
+        sql.del_thumb(update.from_user.id)
         # os.remove(download_location + ".json")
     except:
         pass
